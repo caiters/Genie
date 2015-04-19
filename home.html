@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+  <title>Genie Prototype</title>
+  <link rel="stylesheet" href="bower_components/unsemantic/assets/stylesheets/unsemantic-grid-responsive.css" />
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+  <header id="header" class="page-header">
+    <nav id="main" class="main-nav">
+      <h1>Genie</h1>
+      <ul class="full-menu">
+        <li class="main-menu"><a href="#">Menu</a>
+          <ul>
+            <li><a href="#">Professional Line (Residential) <span>Dealer Installed</span></a></li>
+            <li><a href="#">DIY/Retail Openers (Residential)</a></li>
+            <li><a href="#">Commercial Operators</a></li>
+            <li><a href="#">Video <span>Entertaining and Instructional</span></a>
+              <ul>
+                <li><a href="#">Installation</a></li>
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">How It's Made</a></li>
+                <li><a href="#">Today's Homeowner</a></li>
+                <li><a href="#">'Open Sesame' Video Contest</a></li>
+                <li><a href="#">Video Library</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Product Support</a>
+              <ul>
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">Lorem ipsum</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Company</a>
+              <ul>
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">Lorem ipsum</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="support"><a href="#">Support</a></li>
+        <li class="video"><a href="#">Video</a></li>
+        <li class="search">
+          <form>
+            <input type="text" placeholder="Your city and state or zip">
+            <input type="submit" value="Find Genie">
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="content" id="content">
+    <div class="content-wrapper clearfix">
+      <!-- start homepage slider -->
+      <div id="genieHome">
+        <div class="slide">
+          <img src="http://placehold.it/800x400" alt="" class="hide-on-mobile" />
+          <img src="http://placehold.it/800x800" alt="" class="hide-on-desktop hide-on-tablet" />
+        </div>
+        <div class="slide">
+          <img src="http://placehold.it/800x400" alt="" class="hide-on-mobile" />
+          <img src="http://placehold.it/800x800" alt="" class="hide-on-desktop hide-on-tablet" />
+        </div>
+        <div class="slide">
+          <img src="http://placehold.it/800x400" alt="" class="hide-on-mobile" />
+          <img src="http://placehold.it/800x800" alt="" class="hide-on-desktop hide-on-tablet" />
+        </div>
+      </div>
+      <!-- end homepage slider -->
+
+      <div class="grid-container">
+        <div class="grid-33 grid-mobile-100">
+          <a href="#">
+            <img src="http://placehold.it/400x150" alt="" />
+            <h3>Residential Openers</h3>
+          </a>
+          <p>The next generation of Genie garage door openers offers more power, features, and reliability.</p>
+          <ul>
+            <li><a href="#">Professional Line</a> (Dealer Installed)</li>
+            <li><a href="#">DIY / Retail</a></li>
+          </ul>
+        </div>
+        <div class="grid-33 grid-mobile-100">
+          <a href="#">
+            <img src="http://placehold.it/400x150" alt="" />
+            <h3>Commercial Openers</h3>
+          </a>
+          <p>Innovative features and reliable performance come standard.</p>
+        </div>
+        <div class="grid-33 grid-mobile-100">
+          <a href="#">
+            <img src="http://placehold.it/400x150" alt="" />
+            <h3>Genie Product Support</h3>
+          </a>
+          <p>Find helpful information for our products including installation and programming tips and frequently asked questions for new &amp; existing openers.</p>
+          <ul>
+            <li><a href="#">HomeLink Instructions</a></li>
+            <li><a href="#">VIDEO: Programming HomeLink</a></li>
+            <li><a href="#">Car2U Instructions</a></li>
+          </ul>
+        </div>
+        <div class="grid-100 since-1954">
+          <img src="http://placehold.it/150x150" alt="" />
+          <h3>Since 1954...</h3>
+          <p>We are celebrating 61 years of proven experience in opening and closing millions of garage doors reliably, safely, and securely.</p>
+          <p><strong>Genie - Always At Your Command!</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class="main-footer">
+    <p>Footer content goes here</p>
+  </footer>
+
+  <script type="text/javascript" src="bower_components/slick-carousel/slick/slick.min.js"></script>
+  <script type="text/javascript">
+  (function(){
+    $('#genieHome').slick({
+      dots: true
+    });
+  })();
+  </script>
+</body>
+</html>

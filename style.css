@@ -1,0 +1,66 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+}
+img {
+  max-width: 100%;
+}
+.page-header {
+  border-bottom: 10px solid #333;
+}
+.hero-image {
+  width: 100%;
+}
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+/* main nav */
+.main-menu ul {
+  display: none;
+}
+/* reused elements */
+.hero-image {
+  display: block;
+}
+.expand-items ul {
+  display: none;
+}
+/* home */
+.since-1954 img {
+  float: left;
+  margin-right: 15px;
+}
+/* product details */
+.product-support {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* video page */
+/* footer */
+.main-footer {
+  background: #333;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .product-support {
+    position: static;
+    left: auto;
+    top: auto;
+  }
+}
+@media (max-width: 480px) {
+  .video {
+    width: 100%;
+    clear: both;
+  }
+  .since-1954 img {
+    float: none;
+  }
+}
+
+/*# sourceMappingURL=maps/style.css.map */

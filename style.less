@@ -25,13 +25,30 @@ img { max-width: 100%; }
   ul { display: none; }
 }
 
+/* home */
+
+.since-1954 {
+  img { float: left; margin-right: 15px; }
+}
+
 /* product details */
 
 .product-support { position: absolute; left: 0; top: 0; }
 
+/* video page */
+
+.video {}
+
 /* footer */
 .main-footer { background: #333; color: #fff; }
 
-@media(max-width: 1024px){
+@media(max-width: 767px){
   .product-support { position: static; left: auto; top: auto; }
+}
+
+@media(max-width: 480px){
+  .video { width: 100%; clear: both; }
+  .since-1954 {
+    img { float: none; }
+  }
 }
