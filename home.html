@@ -4,21 +4,22 @@
   <title>Genie Prototype</title>
   <link rel="stylesheet" href="bower_components/unsemantic/assets/stylesheets/unsemantic-grid-responsive.css" />
   <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+  <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="style.css" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 <body>
-  <header id="header" class="page-header">
+  <header id="header" class="page-header clearfix">
     <nav id="main" class="main-nav">
-      <h1>Genie</h1>
+      <a href="home.html"><div class="logo"><span>Genie</span></div></a>
       <ul class="full-menu">
-        <li class="main-menu"><a href="#">Menu</a>
+        <li class="main-menu" id="mainMenu"><a href="#">Menu</a>
           <ul>
             <li><a href="#">Professional Line (Residential) <span>Dealer Installed</span></a></li>
             <li><a href="#">DIY/Retail Openers (Residential)</a></li>
             <li><a href="#">Commercial Operators</a></li>
-            <li><a href="#">Video <span>Entertaining and Instructional</span></a>
+            <li class="has-child"><a href="#">Video <span>Entertaining and Instructional</span></a>
               <ul>
                 <li><a href="#">Installation</a></li>
                 <li><a href="#">Programming</a></li>
@@ -28,7 +29,7 @@
                 <li><a href="#">Video Library</a></li>
               </ul>
             </li>
-            <li><a href="#">Product Support</a>
+            <li class="has-child"><a href="#">Product Support</a>
               <ul>
                 <li><a href="#">Lorem ipsum</a></li>
                 <li><a href="#">Lorem ipsum</a></li>
@@ -38,7 +39,7 @@
                 <li><a href="#">Lorem ipsum</a></li>
               </ul>
             </li>
-            <li><a href="#">Company</a>
+            <li class="has-child"><a href="#">Company</a>
               <ul>
                 <li><a href="#">Lorem ipsum</a></li>
                 <li><a href="#">Lorem ipsum</a></li>
@@ -52,13 +53,18 @@
         </li>
         <li class="support"><a href="#">Support</a></li>
         <li class="video"><a href="#">Video</a></li>
-        <li class="search">
+        <li class="search clearfix">
+          <a href="#search" id="openSearch" class="mobile-search btn"><span>Find Genie</span></a>
           <form>
-            <input type="text" placeholder="Your city and state or zip">
-            <input type="submit" value="Find Genie">
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input name="location" id="location" type="text" placeholder="Your city and state or zip" />
+            </div>
+            <input type="image" src="images/search.gif" />
           </form>
         </li>
       </ul>
+      <img src="images/61-years.png" alt="61 Years of Reliability" class="reliability-badge" />
     </nav>
   </header>
   <div class="content" id="content">
@@ -132,5 +138,6 @@
     });
   })();
   </script>
+  <script src="scripts/common.js"></script>
 </body>
 </html>
