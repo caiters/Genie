@@ -11,7 +11,7 @@ gulp.task('less', function () {
     .pipe(sourcemaps.init())
     .pipe(less())
     .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('.'));
+    .pipe(gulp.dest('./css'));
 });
 
 // Watch Files For Changes
