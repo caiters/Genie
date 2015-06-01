@@ -42,7 +42,7 @@ img {
   width: 100%;
 }
 .content-wrapper {
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto;
   position: relative;
 }
@@ -423,6 +423,13 @@ a {
 }
 .homepage-trio a:hover {
   text-decoration: underline;
+}
+.homepage-trio .grid-33 img {
+  width: 100%;
+}
+.column-wrap {
+  margin-left: -10px;
+  margin-right: -10px;
 }
 .slideshow-wrapper {
   position: relative;

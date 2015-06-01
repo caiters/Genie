@@ -30,7 +30,7 @@ img { max-width: 100%; }
 }
 
 .hero-image { width: 100%; }
-.content-wrapper { max-width: 800px; margin: 0 auto; position: relative; }
+.content-wrapper { max-width: 960px; margin: 0 auto; position: relative; }
 
 /* main nav */
 
@@ -184,7 +184,11 @@ a { color: @red; }
   a { font-weight: bold; text-decoration: none;
     &:hover { text-decoration: underline; }
   }
+  .grid-33 {
+    img{width:100%;}
+  }
 }
+.column-wrap { margin-left: -10px; margin-right: -10px; }
 
 .slideshow-wrapper { position:relative; padding-bottom: 3em;
   .slick-prev, .slick-next { position: absolute; top: 50%; margin-top: -10px; z-index: 3; display: none !important; }
