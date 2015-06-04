@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register src="controls/locate-genie.ascx" tagname="search" tagprefix="genie" %>
+
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> -->
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+
+<html>
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <asp:contentplaceholder id="headcontent" runat="server"></asp:contentplaceholder>
+	<title>Genie Garage Door Openers</title>
+	<asp:PlaceHolder Runat="server">
+        
+        <link rel="stylesheet" href="<%= Page.ResolveUrl("~/css/genie.css") %>" type="text/css" />
+
+    </asp:PlaceHolder>
+</head>
+
+<body id="<%= this.BodyClass %>">
+
+    <!-- header container -->
+    <div style="margin:20px 0 20px 10px;">Genie (Header/Banner)</div>
+
+    <!-- Locate Genie -->
+    <genie:search runat="server" ID="findGenie" />
+    
+    <ul>
+        <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/default.aspx">Home</a></li>
+        <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/garage-door-openers/professional-line">Professional Line</a></li>
+        <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/garage-door-openers/retail">DIY/Retail</a></li>
+        <li><a href="#">Commercial Operators</a></li>
+        <li class="has-child">
+            <a href="#">Support</a>
+            <ul>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/garage-door-openers/support/product-manuals.aspx">Operation & Maintenance Manuals</a></li>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/garage-door-openers/support/programming-accessories.aspx">Programming (Accessories)</a></li>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/garage-door-openers/support/video_installation-programming.aspx">Installation &amp; Programming Videos</a></li>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/garage-door-openers/support/faq.aspx">FAQ</a></li>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/garage-door-openers/support/warranty-registration.aspx">Warranty Registration</a></li>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/garage-door-openers/support/safety.aspx">Opener Safety</a></li>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/company/contact.aspx">Contact Us</a></li>
+            </ul>
+        </li>
+        <li class="has-child">
+            <a href="#">Video <span>Entertaining and Instructional</span></a>
+            <ul>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/garage-door-openers/video_how-its-made.aspx">How Its Made</a></li>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/garage-door-openers/video_library.aspx">Genie Video Library</a></li>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/garage-door-openers/video_open-sesame.aspx">Open Sesame Contest</a></li>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/garage-door-openers/video_todays-homeowner.aspx">Today's Homeowner</a></li>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/garage-door-openers/support/video_installation-programming.aspx">Installation &amp; Programming</a></li>
+            </ul>
+        </li>
+        <li class="has-child">
+            <a href="#">Company</a>
+            <ul>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/company">About Us</a></li>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/company/contact.aspx">Contact Us</a></li>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/company/news.aspx">News/Press Releases</a></li>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/company/buzz.aspx">Genie Buzz</a></li>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/garage-door-openers/testing-reliability-evaluation-quality.aspx">Testing &#8211; Reliability &#8211; Evaluation &#8211; Quality</a></li>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/company/supply-chain-ethics.aspx">Supply Chain Ethics</a></li>
+                <li><a href="<%= NavUtils.GetApplicationPath(Request) %>/company/terms.aspx">Terms</a></li>
+            </ul>
+        </li>
+    </ul>
+    <hr />
+    <!-- /header -->
+
+    <asp:contentplaceholder id="Body" runat="server"></asp:contentplaceholder>
+
+    <!-- footer -->
+    <hr />
+    <div style="margin:20px 0 20px 10px;">Genie (Footer)</div>
+    <!-- /footer_nav_container -->
+
+</body>
+</html>

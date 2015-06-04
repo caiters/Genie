@@ -72,4 +72,14 @@
 
     });
   });
+
+  // faq
+
+  $('.faq').each(function(){
+    var $faq = $(this);
+    $('> li > strong', $faq).click(function(){
+      $(this).siblings('div').slideToggle();
+    });
+  });
+
 })();

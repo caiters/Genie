@@ -395,6 +395,30 @@ a {
 .expand-items ul.download-list li a span {
   color: #231f20;
 }
+.faq {
+  margin: 0;
+  padding: 0 0 0 1.5em;
+}
+.faq li {
+  border-bottom: 1px solid #e6e6e9;
+}
+.faq li > div {
+  display: none;
+}
+.faq li > strong {
+  color: #ce1126;
+  cursor: pointer;
+  padding: 1em 0;
+  display: block;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  font-weight: normal;
+}
+.faq li > strong:hover {
+  color: #000;
+}
 /* home */
 .since-1954 img {
   float: left;
@@ -588,14 +612,6 @@ a {
 .support-area-grid ul li a.pdf {
   padding: 1em 2.5em;
 }
-.support-area-grid ul li a.pdf:before {
-  content: '\f1c1';
-  font-family: 'FontAwesome';
-  color: #ce1126;
-  position: absolute;
-  left: 1em;
-  top: 1em;
-}
 .support-area-grid ul li a span {
   display: block;
   font-size: 11px;
@@ -687,6 +703,9 @@ a {
     position: static;
     left: auto;
     top: auto;
+  }
+  .support-area-grid .grid-odd {
+    clear: left;
   }
   .main-nav {
     min-height: 0;

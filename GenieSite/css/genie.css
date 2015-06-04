@@ -1,0 +1,120 @@
+/*------------------------------------*\
+
+genie.css
+
+\*------------------------------------*/
+
+/*
+Author: Christian Scripter
+Twitter: @crscripter
+Author URL: crscripter.com
+Project URL: m.geniecompany.com
+Version: 1.0
+Codename: Rocket
+Date: Aug 2013
+Copyright 2013 The Genie Company
+*/
+
+/* html { height: 100%; } */
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-family: arial, helvetica sans-serif;
+	/* color: #ce1126; */
+	color: #231f20;
+	margin: 0 0 1.15em 10px;
+	padding: 0;
+	font-weight: bold;
+	line-height: 1.30em;
+	letter-spacing: normal;
+	text-align: left;
+	}
+	
+/*	
+h1 { font-size: 150%; }
+h2 { font-size: 125%; }
+h3 { font-size: 100%; }
+h4 { font-size: 80%; }
+h5 { font-size: 60%; }
+h6 { font-size: 50%; }
+*/
+
+h1 { font-size: 26px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
+h4 { font-size: 14px; }
+h5 { font-size: 12px; }
+
+p {
+    line-height: 1.8em;
+    margin: 0 0 16px 10px;
+    padding: 0;
+    }
+    
+span.header_note {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.8em;
+    margin: 0 0 24px 0;
+    padding: 0;
+    text-align: center;
+    }
+    
+a  {
+   color: #ce1126;
+   text-decoration: none;
+   }
+   
+a:hover { text-decoration: none; }
+	
+body {
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	color: #231f20;
+	font-size: 13px;
+	font-family: arial, helvetica, san-serif;
+	background-color: #fff;
+	}
+		
+span.reg {
+	font-size: 50%;
+	vertical-align: top;
+	position: relative;
+	top: -2px;
+	left: 1px;
+	}
+	
+/* ul: basic */
+
+ul {
+	width: auto;
+	height: auto;
+	text-align: left;
+	margin: 10px 0 16px 30px;
+	padding: 0;
+	text-indent: 0px;
+	list-style-position: outside;
+	list-style-type: disc;
+	}
+
+ul li {
+	line-height: 1.2em;
+	margin: 0 0 10px 0;
+	padding: 0;
+	}
+	
+ul li:last-child { margin-bottom: 40px; }
+
+ul li p { margin-left: 0; }
+    
+ul li span.note {
+    display: block;
+	margin: 8px 0 0 0;
+	color: #231f20;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 1.5em;
+    }
