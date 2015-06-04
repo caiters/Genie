@@ -27,7 +27,7 @@ img {
 }
 .page-header {
   border-bottom: 10px solid #333;
-  background: #b3b4b9 url('images/header-bg.jpg') center top no-repeat;
+  background: #b3b4b9 url('../images/header-bg.jpg') center top no-repeat;
   position: relative;
 }
 .page-header nav {
@@ -56,7 +56,7 @@ img {
 .main-nav .logo {
   margin: 0 auto;
   text-align: center;
-  background: transparent url('images/logo.png') center center no-repeat;
+  background: transparent url('../images/logo.png') center center no-repeat;
   width: 272px;
   height: 120px;
   position: absolute;
@@ -692,7 +692,7 @@ a {
     min-height: 0;
   }
   .main-nav .logo {
-    background-image: url('images/logo-mobile.png');
+    background-image: url('../images/logo-mobile.png');
     width: 135px;
     height: 49px;
     position: static;
